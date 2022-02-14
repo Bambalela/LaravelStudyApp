@@ -7,8 +7,19 @@
 @section('title')Реєстрація@endsection
 
 @section('body')
-    <body class="text-center">
-    <main class="form-signin">
+<body class="text-center">
+    <div class="form-signin">
+
+        @if($errors->any())
+            <div class="container alert alert-danger">
+                <ul>
+                    @foreach($errors->all() as $error)
+                        <li>{{$error}}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+
         <form action="{{ route('submit_new_user') }}" method="post">
             @csrf
             <h1 class="h3 mb-3 fw-normal">Сторінка реєстрації</h1>
@@ -44,6 +55,6 @@
         </form>
 
         <h1>test</h1>
-    </main>
+    </div>
     </body>
 @endsection

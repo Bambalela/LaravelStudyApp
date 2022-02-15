@@ -21,6 +21,4 @@ Route::get('/reg', function () {
     return view('registration');
 })->name('registration');
 
-Route::post('/reg/submit/', function () {
-    return Request::all();
-})->name('submit_new_user');
+Route::post('/reg/submit/', 'RegistrationController@submit')->name('submit_new_user');

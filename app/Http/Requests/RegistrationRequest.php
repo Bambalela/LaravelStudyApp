@@ -27,8 +27,8 @@ class RegistrationRequest extends FormRequest
             'name' => 'required|min:2|max:20',
             'surname' => 'required|min:2|max:20',
             'email' => 'required|email',
-            'password' => 'required|min:8',
-            'password_repeat' => 'required|min:8'
+            'password' => 'required|confirmed|min:8',
+            'password_confirmation' => 'required|min:8'
         ];
     }
 
@@ -36,7 +36,7 @@ class RegistrationRequest extends FormRequest
     {
         // here we are changing our form fields names, when we are printing errors
         return [
-            'password_repeat' => 'password repeating'
+            'password_confirmation' => 'password confirmation'
         ];
     }
     public function messages()

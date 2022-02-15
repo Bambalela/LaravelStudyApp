@@ -25,24 +25,24 @@
             <h1 class="h3 mb-3 fw-normal">Сторінка реєстрації</h1>
 
             <div class="form-floating">
-                <input type="text" name = "name" class="form-control"  id="name" placeholder="Name">
+                <input type="text" name = "name" class="form-control" value="{{ old('name') }}" placeholder="Name">
                 <label for="floatingInput">Name</label>
             </div>
             <div class="form-floating">
-                <input type="text" name = "surname" class="form-control" id="surname" placeholder="SurName">
+                <input type="text" name = "surname" class="form-control" value="{{ old('surname') }}" placeholder="SurName">
                 <label for="floatingInput">Surname</label>
             </div>
             <div class="form-floating">
-                <input type="email" class="form-control" id="email" placeholder="EmailName">
+                <input type="email" name = "email" class="form-control" value="{{ old('email') }}" placeholder="EmailName">
                 <label for="floatingInput">Email</label>
             </div>
             <div class="form-floating">
-                <input type="password" name = "password" class="form-control" id="password" placeholder="Password">
+                <input type="password" name = "password" class="form-control" placeholder="Password">
                 <label for="floatingInput">Password</label>
             </div>
             <div class="form-floating">
-                <input type="password" name = "password_repeat" class="form-control" id="password_repeat" placeholder="Password Repeat">
-                <label for="floatingInput">Password Repeat</label>
+                <input type="password" name = "password_confirmation" class="form-control" placeholder="Password Confirmation">
+                <label for="floatingInput">Password Confirmation</label>
             </div>
 
             <div class="checkbox mb-3">

@@ -31,7 +31,7 @@
                 <input type="password" name = "password" class="form-control" placeholder="Password">
                 <label for="floatingInput">Password</label>
             </div>
-{{--TODO: remember me realization--}}
+{{--TODO: remember me realization (cocies)--}}
             <div class="checkbox mb-3">
                 <label>
                     <input type="checkbox" value="remember-me"> Remember me

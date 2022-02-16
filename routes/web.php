@@ -25,4 +25,4 @@ Route::post('/reg/submit/', 'RegistrationController@submit')->name('submit_new_u
 Route::get('/login', function () {
     return view('login');
 })->name('login');
-Route::post('/login/submit', 'LoginController@login' )->name('submit_login');
+Route::post('/login/submit', 'LoginController@loginValidate' )->name('submit_login');
